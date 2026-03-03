@@ -20,10 +20,10 @@ class NewUserRegisteredEvent implements ShouldBroadcast
     /**
      * Create a new event instance.
      */
-    public function __construct($user)
+    public function __construct()
     {
-        $this->message = "New user registered from event called $user->name";
-        $this->myUser = $user;
+        // $this->message = "New user registered from event called $user->name";
+        // $this->myUser = $user;
     }
 
     /**

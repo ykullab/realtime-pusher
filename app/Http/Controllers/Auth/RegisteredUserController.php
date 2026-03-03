@@ -58,7 +58,7 @@ class RegisteredUserController extends Notification
         //Brodcast Event
          
 
-         NewUserRegisteredEvent::dispatch();
-        //    Broadcast(new NewUserRegisterdEvent());
+        //  NewUserRegisteredEvent::dispatch();
+           Broadcast(new NewUserRegisteredEvent());
     }
 }
