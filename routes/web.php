@@ -31,7 +31,7 @@ Route::middleware("auth")->group(function(){
 
 Route::view("/","admin.index")->name("index");
 
-Route::resource("services",ServiceController::class);
+Route::resource("services",ServiceController::class);  
  
 
 });

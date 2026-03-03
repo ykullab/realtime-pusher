@@ -22,7 +22,7 @@ class NewUserRegisteredEvent implements ShouldBroadcast
      */
     public function __construct()
     {
-        // $this->message = "New user registered from event called $user->name";
+        $this->message = "New user registered from event called ";
         // $this->myUser = $user;
     }
 
