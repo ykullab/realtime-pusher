@@ -29,7 +29,7 @@
   </head>
 
   @vite("resources/js/app.js");
-  {{-- Pusher setting 
+  -- Pusher setting 
 
  <script src="https://js.pusher.com/8.4.0/pusher.min.js"></script>
   <script>
@@ -45,6 +45,6 @@
     channel.bind('App\\Events\\NewUserRegisterdEvent', function(data) {
       alert(JSON.stringify(data));
     });
-  </script> --}}
+  </script> 
 
  
