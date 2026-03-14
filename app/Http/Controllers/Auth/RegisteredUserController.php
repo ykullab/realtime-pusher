@@ -57,7 +57,7 @@ class RegisteredUserController extends Notification
         //Brodcast Event
          
 
-         NewUserRegisteredEvent::dispatch();
+         NewUserRegisteredEvent::dispatch($user);
         //    Broadcast(new NewUserRegisteredEvent());
         
          return redirect(RouteServiceProvider::HOME);

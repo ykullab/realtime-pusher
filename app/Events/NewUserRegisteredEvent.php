@@ -20,10 +20,10 @@ class NewUserRegisteredEvent implements ShouldBroadcast
     /**
      * Create a new event instance.
      */
-    public function __construct()
+    public function __construct($user)
     {
         $this->message = "New user registered from event called ";
-        // $this->myUser = $user;
+        $this->myUser = $user;
     }
 
     /**
@@ -51,10 +51,10 @@ class NewUserRegisteredEvent implements ShouldBroadcast
     //  *
     //  * @return array<string, mixed>
     //  */
-    // public function broadcastWith(): array
-    // {
-    //     return ['email' => $this->myUser->email];
-    // }
+    public function broadcastWith(): array
+    {
+        return ['email' => $this->myUser->email];
+    }
 
     /**
      * Determine if this event should broadcast.
